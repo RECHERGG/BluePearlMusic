@@ -1,0 +1,12 @@
+version: '3.8'
+
+services:
+  yourbotname:
+    image: yourbotname
+    env_file:
+      - token.env
+    networks:
+      - default
+    restart: unless-stopped
+networks:
+  default:
