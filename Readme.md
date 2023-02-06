@@ -99,5 +99,3 @@ This bot (include the images and name) are licensed under the MIT License.
 See [**LICENSE**](https://github.com/Rysefoxx/RyseInventory/blob/master/LICENSE)
 
 Copyright (c) 2023 RECHERGG
-
-    
