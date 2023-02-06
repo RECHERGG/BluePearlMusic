@@ -69,7 +69,7 @@ You can fork this repository to edit the messages of the Bot.
 When you don't have a good hosting System, then edit the Buffer in the Constructor form the `PlayerSendHandler`.
 
 # License
-This bot is licensed under the MIT License.
+This bot (include the images and name) is licensed under the MIT License.
 See [**LICENSE**](https://github.com/Rysefoxx/RyseInventory/blob/master/LICENSE)
 
 Copyright (c) 2023 RECHERGG
