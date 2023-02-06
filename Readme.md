@@ -1,4 +1,4 @@
-# BluePearlMusic Discord Bot (JDA) ![](https://cdn.discordapp.com/attachments/1007204774053150762/1072168325435625602/bluepearl_better.png)
+# BluePearlMusic Discord Bot (JDA)
 
 A simple music bot easy to set up.
 
