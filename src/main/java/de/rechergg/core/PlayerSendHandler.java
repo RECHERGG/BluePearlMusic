@@ -40,7 +40,7 @@ public class PlayerSendHandler implements AudioSendHandler {
 
     public PlayerSendHandler(AudioPlayer audioPlayer) {
         this.audioPlayer = audioPlayer;
-        this.buffer = ByteBuffer.allocate(2048);
+        this.buffer = ByteBuffer.allocate(1000);
         (this.lastFrame = new MutableAudioFrame()).setBuffer(this.buffer);
     }
 

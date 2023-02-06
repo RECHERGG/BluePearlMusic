@@ -1,4 +1,4 @@
-# BluePearlMusic Discord Bot (JDA) ![](https://cdn.discordapp.com/attachments/1007204774053150762/1072168325435625602/bluepearl_better.png)
+# BluePearlMusic Discord Bot (JDA)
 
 A simple music bot easy to set up.
 
@@ -63,13 +63,39 @@ ENTRYPOINT ["java", "-jar", "yourJarFileName.jar"]
 ```env
 BOT_TOKEN=yourBotToken
 ```
+- Now you can open your Terminal and go into the Folder like that:
+  - ```cd ..``` (go out of root in case your logged in with root)
+  - ```cd usr/YourBotName```
+- After that you can build the jar as Image
+```
+docker build -t yourbotname ./
+```
+- Now you can start your Bot
+```
+docker compose up -d
+```
+- you can see the logs, with these command
+```
+docker logs -f yourbotname-yourbotname-1
+```
+- **Congratulations**, you can now yous the music bot
+
+# Stopping the Bot
+- To stopping your bot use these commands
+```
+docker compose down
+```
+- To delete the Image
+```
+docker rmi yourbotname:latest
+```
 
 # Edit
 You can fork this repository to edit the messages of the Bot.
 When you don't have a good hosting System, then edit the Buffer in the Constructor form the `PlayerSendHandler`.
 
 # License
-This bot is licensed under the MIT License.
+This bot (include the images and name) are licensed under the MIT License.
 See [**LICENSE**](https://github.com/Rysefoxx/RyseInventory/blob/master/LICENSE)
 
 Copyright (c) 2023 RECHERGG
