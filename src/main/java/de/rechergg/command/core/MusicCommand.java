@@ -64,6 +64,7 @@ public class MusicCommand extends Command {
     public MusicCommand(BluePearlMusic bluePearlMusic) {
         super(bluePearlMusic);
         AudioSourceManagers.registerRemoteSources(MANAGER);
+        AudioSourceManagers.registerLocalSource(MANAGER);
     }
 
     @Override
@@ -252,7 +253,7 @@ public class MusicCommand extends Command {
                                     .setDescription("**Song Hinzugefügt**")
                                     .addField("Title", "**[" + track.getInfo().title + "]("
                                             + track.getInfo().uri + ")**", false)
-                                    .addField("Dauer", "`[ "+ track.getPosition()
+                                    .addField("Dauer", "`[ "+ getTimestamp(track.getPosition())
                                             + " / " + getTimestamp(track.getDuration()) + " ]`", true)
                                     .addField("Ersteller", track.getInfo().author, true)
                                     .setThumbnail("https://img.youtube.com/vi/" + track.getInfo().uri.split("&list=")[0]

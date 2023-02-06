@@ -36,12 +36,13 @@ public class PlayerSendHandler implements AudioSendHandler {
 
     private final AudioPlayer audioPlayer;
     private final ByteBuffer buffer;
-    private MutableAudioFrame lastFrame;
+    private final MutableAudioFrame lastFrame;
 
     public PlayerSendHandler(AudioPlayer audioPlayer) {
         this.audioPlayer = audioPlayer;
-        this.buffer = ByteBuffer.allocate(1000);
-        (this.lastFrame = new MutableAudioFrame()).setBuffer(this.buffer);
+        this.buffer = ByteBuffer.allocate(1024);
+        this.lastFrame = new MutableAudioFrame();
+        this.lastFrame.setBuffer(this.buffer);
     }
 
     @Override
