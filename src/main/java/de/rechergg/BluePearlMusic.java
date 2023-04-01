@@ -86,6 +86,8 @@ public class BluePearlMusic {
         );
 
         getJda().getPresence().setStatus(OnlineStatus.ONLINE);
+        getJda().getGuilds().forEach(guild -> guild.getAudioManager().setSelfDeafened(true));
+        getJda().getGuilds().forEach(guild -> guild.getAudioManager().setSelfMuted(false));
         getJda().getPresence().setActivity(Activity.playing(" Music"));
     }
 

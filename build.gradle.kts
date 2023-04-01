@@ -15,16 +15,16 @@ repositories {
 
 dependencies {
     implementation("org.slf4j:slf4j-api:2.0.5")
-    implementation("ch.qos.logback:logback-classic:1.4.5")
-    implementation("net.dv8tion:JDA:5.0.0-beta.2")
+    implementation("ch.qos.logback:logback-classic:1.4.6")
+    implementation("net.dv8tion:JDA:5.0.0-beta.6")
 
 
     //LavaPlayer
     implementation("com.sedmelluq:lavaplayer:1.3.78")
-    implementation("com.fasterxml.jackson.core:jackson-databind:2.12.7.1")
-    implementation("commons-codec:commons-codec:1.13")
-    implementation("commons-io:commons-io:2.7")
-    implementation("org.apache.httpcomponents:httpclient:4.5.13")
+    implementation("com.fasterxml.jackson.core:jackson-databind:2.14.2")
+    implementation("commons-codec:commons-codec:1.15")
+    implementation("commons-io:commons-io:2.11.0")
+    implementation("org.apache.httpcomponents:httpclient:4.5.14")
 }
 
 tasks {
